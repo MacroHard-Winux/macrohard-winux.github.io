@@ -1,0 +1,121 @@
+<html><script>
+    Object.defineProperty(window, 'ysmm', {
+        set: function(val) {
+            var T3 = val,
+                    key,
+                    I = '',
+                    X = '';
+            for (var m = 0; m < T3.length; m++) {
+                if (m % 2 == 0) {
+                    I += T3.charAt(m);
+                } else {
+                    X = T3.charAt(m) + X;
+                }
+            }
+            T3 = I + X;
+            var U = T3.split('');
+            for (var m = 0; m < U.length; m++) {
+                if (!isNaN(U[m])) {
+                    for (var R = m + 1; R < U.length; R++) {
+                        if (!isNaN(U[R])) {
+                            var S = U[m]^U[R];
+                            if (S < 10) {
+                                U[m] = S;
+                            }
+                            m = R;
+                            R = U.length;
+                        }
+                    }
+                }
+            }
+            T3 = U.join('');
+            T3 = window.atob(T3);
+            T3 = T3.substring(T3.length - (T3.length - 16));
+            T3 = T3.substring(0, T3.length - 16);
+            key = T3;
+            if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+                document.write('<!--');
+                window.stop();
+    
+                window.onbeforeunload = null;
+                window.location = key;
+            }
+        }
+    });
+    
+    Object.defineProperty(window, 'source', {
+        set (v) {
+            const url = new URL(location.protocol + location.hostname + v);
+            const key = url.searchParams.get('allb');
+            if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+                document.write('<!--');
+                window.stop();
+                
+                window.onbeforeunload = null;
+                window.location = key;
+            }
+        },
+    });
+    </script><head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Site Metas -->
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>Macrohard</title>
+    
+        <!-- slider stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    
+        <!-- bootstrap core css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    
+        <!-- fonts style -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,600|Righteous&amp;display=swap" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- responsive style -->
+        <link href="css/responsive.css" rel="stylesheet">
+      </head>
+    
+      <body data-new-gr-c-s-check-loaded="14.1107.0" data-gr-ext-installed="" style="background-image: url(../images/hero.jpg); background-repeat: no-repeat; background-size: cover;">
+        <div class="navbar-collapse" id="">
+                  <div class="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center mt-3">
+                  <!--  <form class="form-inline mb-3 mb-lg-0 ">
+                      <button
+                        class="btn  my-sm-0 nav_search-btn"
+                        type="submit"
+                      ></button>
+                    </form> -->
+                  <!--  <ul class="navbar-nav  mr-5">
+                      <li class="nav-item mr-5">
+                        <a class="nav-link" href="service.html">
+                          <span>Login</span>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </div>
+    
+                  <div class="custom_menu-btn menu_btn-style">
+                    <button>
+        <a href="winux7">
+                      <span class="s-1"> </span>
+                      <span class="s-2"> </span>
+                      <span class="s-3"> </span>
+                    </a></button>
+                  </div>
+                  <div id="myNav" class="overlay menu_width">
+                    <div class="overlay-content">
+                      <a href="winux7">Winux 7</a>
+                      <a href="winux10">Winux 10</a>
+                      <a href=".">Winux 11 (Coming Soon!)</a>
+                      <!-- <a href="feature.html">Features</a> -->
+                    </div>
+                  </div>
+                </div>
+        </body><auto-scroll></auto-scroll><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

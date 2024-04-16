@@ -3,28 +3,6 @@
 
 :root {
 
-	
-	
-	--font_v:				var(--font_s, var(--font));
-	
-	--mentioncolor_v:			var(--mentioncolor_s, var(--mentioncolor));
-	--successcolor_v:			var(--successcolor_s, var(--successcolor));
-	--warningcolor_v:			var(--warningcolor_s, var(--warningcolor));
-	--dangercolor_v:			var(--dangercolor_s, var(--dangercolor));
-	
-	--textbrightest_v:			var(--textbrightest_s, var(--textbrightest));
-	--textbrighter_v:			var(--textbrighter_s, var(--textbrighter));
-	--textbright_v:				var(--textbright_s, var(--textbright));
-	--textdark_v:				var(--textdark_s, var(--textdark));
-	--textdarker_v:				var(--textdarker_s, var(--textdarker));
-	--textdarkest_v:			var(--textdarkest_s, var(--textdarkest));
-	
-	--backgroundaccent_v:			var(--backgroundaccent_s, var(--backgroundaccent));
-	--backgroundprimary_v:			var(--backgroundprimary_s, var(--backgroundprimary));
-	--backgroundsecondary_v:		var(--backgroundsecondary_s, var(--backgroundsecondary));
-	--backgroundsecondaryalt_v:		var(--backgroundsecondaryalt_s, var(--backgroundsecondaryalt));
-	--backgroundtertiary_v:			var(--backgroundtertiary_s, var(--backgroundtertiary));
-	--backgroundfloating_v:			var(--backgroundfloating_s, var(--backgroundfloating));
 }
 
 .theme-light:not(.userProfileOuterThemed_a425f3),
